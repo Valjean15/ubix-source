@@ -1,0 +1,21 @@
+{
+  "name": "ubix-source",
+  "version": "0.0.2",
+  "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "author": "Jean Lanza",
+  "license": "ISC",
+  "dependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}
