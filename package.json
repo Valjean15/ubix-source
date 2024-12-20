@@ -1,6 +1,6 @@
 {
   "name": "ubix-source",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "main": "index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -8,14 +8,20 @@
     "/dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "jest"
   },
   "author": "Jean Lanza",
   "license": "ISC",
   "dependencies": {
+    "puppeteer": "^23.9.0",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  },
+  "description": "Scapper for traffic tickets"
 }
